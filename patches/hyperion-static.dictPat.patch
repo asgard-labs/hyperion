@@ -1,0 +1,13 @@
+diff --git a/src/Hyperion/Static/TH.hs b/src/Hyperion/Static/TH.hs
+index c70bd95..798667e 100644
+--- a/src/Hyperion/Static/TH.hs
++++ b/src/Hyperion/Static/TH.hs
+@@ -35,7 +35,7 @@ mkInstance getClosureDictName staticClassName instanceDec = case instanceDec of
+       dictType = ConT dictTypeName
+       dictValueName = 'Dict
+       dictValue = ConE dictValueName
+-      dictPat = ConP dictValueName []
++      dictPat = ConP dictValueName [] []
+       closureClassName = ''Closure
+       closureClass = ConT closureClassName
+       capName = 'cAp
